@@ -40,7 +40,7 @@ if (isset($_GET['error']) && !empty($_GET['error'])) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="images/favicon.ico" />
-        <title>TeCoordena</title>
+        <title>Reserva</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="css/estilo.css" rel="stylesheet" type="text/css" />
 

@@ -40,7 +40,14 @@ if ($_POST) {
 
         
         if ($usuario->inserir()) {
-            echo "Inserido com sucesso!";
+            // echo 'Dados inseridos';
+            session_start();
+
+            // $_SESSION['usuarioLogado'] = $usuario->getUserName();
+            $_SESSION['usuarioLogado'] = $_POST['username'];
+        
+           header("Refresh:0; url= http://" . $_SERVER['SERVER_NAME'] . ":8080/reservas/views/salas.php");
+
             
         } else {
             header("Refresh:0; url=http://" . $_SERVER['SERVER_NAME'] .  $_SERVER['CONTEXT_PREFIX'] . "/" . $scriptnames[2] . "/index.php?error=2");
